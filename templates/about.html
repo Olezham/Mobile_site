@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% block title %}Головна сторінка{% endblock %} 
+{% block body %}
+<div>
+    <h1 class="" style="text-align: center; font-size: 22px;margin-top: 20px; margin-bottom: 22px;">Привіт!</h1>   
+</div>
+<div class="geb-text">
+
+
+
+
+
+
+
+    
+    <p class="paragrap">Я танцівниця та хореограф з України.</br> <span class="spnatext">Народилася в Новій Каховці 2004 року.</span> </p>
+    <p class="paragrap">Нині перебуваю у Берліні, де навчаюсь</br> <span class="spnatext">в програмі «Dart Studios». </span> </p>
+</div>
+<div class="container"> 
+    <div class="header-green" style="margin: 0 auto; width: 100%;">
+    <p class="header-green-item" >Як усе почалося:</p> 
+    </div>
+    <div><img class="light-img" src="{{ url_for('static', filename='img/light.png')}}" alt=""></div>
+</div>
+<div>
+    <div class="geb-text1">
+        <p class="paragrap">
+            Займатися танцями почала з 3-х </br> років.</br> Спочатку відвідувала місцевий танцювальний гурток, а згодом школу танцю “Life in Dance” (з 2008 року), яка відіграла важливу роль у моєму танцювальному шляху. 
+        </p>
+        <p class="paragrap"> 
+            Зі школою «life in dance» виступали на сцені з мюзиклами, благодійними концертами, брали участь у</br> конкурсах, національного та міжнародного рівнів. 
+        </p>
+        <p class="paragrap">  
+            Були відібрані на World of Dance
+        </p>
+    </div>
+</div>
+<div class="headertable">
+    <p class="header-green-item" style="margin: 0 auto; width: 100%;">
+        Де я навчалася
+    </p>
+    <div>
+    <table cellpadding="10" 
+    style="width: 100%; border-left: 0; border-collapse:collapse; border: 2px solid black;margin-left: 20px; margin-right: 20px;">
+        <tr>
+            <td style="border:2px solid black; width:5px; text-align: left; ">«Dart studios program» з вересня 2022 року.</td>
+        </tr>
+        <tr>
+            <td style="border:2px solid black; width:5px; text-align: left; ">Інтенсив у студії «DART», Берлін (літо 2022)</td>
+        </tr>
+        <tr>
+            <td style="border:2px solid black; width:5px; text-align: left; "> «life in dance camp” 2018, 2019, 2020 та 2021. </td>
+        </tr>
+        <tr>
+            <td style="border:2px solid black; width:5px; text-align: left; "> Школа танцю «life in dance» 2009-2022 </td>
+        </tr>
+        <tr>
+            <td style="border:2px solid black; width:5px; text-align: left;">
+                Регулярно відвідую майстер класи різних стилів та технік: гага, вог, ваакінг, хіп-хоп, хаус, денс-холл, контемпорарі, джаз-модерн, high heels. 
+                 </td>
+        </tr>
+    </table>
+</div>
+
+</div>
+
+
+{% endblock %} 
