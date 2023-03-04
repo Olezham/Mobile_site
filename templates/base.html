@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" />
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <div class="menu deactive">
+        <sidebar class="sidebar-main">
+            <button class="menu-btn-close"><img class="menu-btn-close-img" src="{{ url_for('static', filename='img/close-btn.png')}}" alt="X" width="84" height="78"></button>
+            <ul class="side-menu">
+                <li class="side-menu-item">
+                    <a href="/about">Про мене</a> </li>
+                <li class="side-menu-item">Проєкти</li>
+                <li class="side-menu-item">Фотогалерея</li>
+                <li class="side-menu-item">Відеогалерея</li>
+                <li class="side-menu-item">Зв'язатися</li>
+            </ul>
+        </sidebar>
+    </div>
+    <header class="main-nav" style="margin-top: 46px;">
+        <div class="main-content">
+            <table  cellpadding="10" 
+            style="width: 100vw; border-left: 0; border-collapse:collapse; border: 2px solid black;">
+                <tr>
+                    <td style="border-left:2px solid black; width:5px ">  <button class="menu-btn-open"><img class="nav-img" src="{{ url_for('static', filename='img/menu_btn.png')}}" alt="menu" /></button></td >
+                    <td style="border:2px solid black; align-items: center; width: 20px;padding-left: 20px; padding-right: 20px;"><span class="lng">EN</span></td>
+                    <td style="border-right:2px solid black;"><span class="name">ЗЕЛЕНСЬКА ОЛЕКСАНДРА</span></td>
+                </tr>
+            </table>
+        </div>  
+    </header>
+    {% block body %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js')}}"></script>
+
+</body>
+
+</html>
