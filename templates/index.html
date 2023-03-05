@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block title %}Головна сторінка{% endblock %} {% block body %}
+<div class="main-content" style="width: 100vw">
+    <main class="main">
+        <ul class="main-list">
+            <li class="main-list-item">
+                <img class="btn-img" src="{{ url_for('static', filename='img/about_me.png')}}" alt="" />
+                <h1 class="main-list-item-text">ПРО МЕіНЕ</h1>
+            </li>
+            <li class="main-list-item">
+                <img class="btn-img" src="{{ url_for('static', filename='img/projects.jpg')}}" alt="" />
+                <h1 class="main-list-item-text">ПРОЄКТИ</h1>
+            </li>
+            <li class="main-list-item">
+                <img class="btn-img" src="{{ url_for('static', filename='img/foto.png')}}" alt="" />
+                <h1 class="main-list-item-text">ФОТОГАЛЕРЕЯ</h1>
+            </li>
+            <li class="main-list-item">
+                <img class="btn-img" src="{{ url_for('static', filename='img/video.png')}}" alt="" />
+                <h1 class="main-list-item-text">ВІДЕО ГАЛЕРЕЯ</h1>
+            </li>
+        </ul>
+    </main>
+</div>
+{% endblock %}
